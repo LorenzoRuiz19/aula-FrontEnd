@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É o JAVA!!!</title>
+    <script>
+
+        // alert("Olá " + nome + "!");
+
+        // E -> P -> S
+        // IO
+
+        function exibir()
+        {
+          var Um = prompt("Digite Numero Um");
+          var dois = prompt("Digite Numero Dois");
+          var Soma = parseInt(Um) + parseInt(dois)
+          alert(Soma)
+        }
+
+        function Nome()
+        {
+            console.log("Bom dia " + nome + "!!")
+        }
+        function Idade()
+        {
+            var idade = prompt("Qual a sua idade?")
+            if (idade < 13)
+            {
+                alert("peste")
+            }   else if( idade > 60) {
+                alert("velho")
+            }   else {
+                alert("Adulto")
+            }
+        }   
+
+        function Maior()
+        {
+            var n1 = prompt("digite o primeiro número");
+            var n2 = prompt("digite o segundo número");
+            var n3 = prompt("digite o terceiro número");
+            if (parseInt(n1) > parseInt(n2)) { 
+                if (parseInt(n2) > parseInt(n3)) {
+                    alert("o maior número é o " + n1 + " e o menor é o " + n3)
+                } if (parseInt(n3) > parseInt(n2)) {
+                    if (parseInt(n1) > parseInt(n3)) {
+                        alert("o maior número é o " + n1 + " e o menor é o " + n2)
+                    } if (parseInt(n3) > parseInt(n1)) {
+                        alert("o maior número é o " + n3 + " e o menor é o " + n2)
+                    }
+                }
+            } if (parseInt(n2) > parseInt(n1)) {
+            if (parseInt(n1) > parseInt(n3)) {
+                alert("o maior número é o " + n2 + " e o menor é o " + n3)
+            } if (parseInt(n3) > parseInt(n1)) {
+                alert("o maior número é o " + n2 + " e o menor é o " + n1)
+            }
+            }
+        }
+      if (parseInt(n3) > parseInt(n1)) {
+                if (parseInt(n2) > parseInt(n1)) {
+                    alert("o maior número é o " + n3 + " e o menor é o " + n1)
+                }
+}
+
+    </script>
+</head>
+<body>
+    <h1>JAVAAAAscript</h1>
+    
+    <button ondblclick="exibir()">Soma</button>
+    <button onclick="Idade()">És criança?</button>
+    <button onclick="Maior()">Número Maior</button>
+</body>
+</html>
